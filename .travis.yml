@@ -9,4 +9,5 @@ before_install:
   - git clean -dfx
 
   - sudo apt-get install python3-dev cython
-script: ./autogen.sh && make && make check && make distcheck
+script:
+  - python3 ./setup.py
